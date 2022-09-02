@@ -1,0 +1,5 @@
+0. make stuff
+1. git add: choose which files are committed
+    git add file1 file2 ...
+2. git commit: commit
+    git commit -m "message..."
