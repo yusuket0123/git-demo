@@ -14,3 +14,4 @@ Tips:
 - VIM
     "git commit"
     →I: insert message; wq: escape from VIM
+    using for example when writing too long messages to commit
