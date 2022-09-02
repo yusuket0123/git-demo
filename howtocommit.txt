@@ -1,5 +1,9 @@
 0. make stuff
 1. git add: choose which files are committed
-    git add file1 file2 ...
+    - git add file1 file2 ...
+    - git add . : stage all changes at once
 2. git commit: commit
     git commit -m "message..."
+
+Atomic Commits
+keep each commit focused on a single thing
