@@ -11,3 +11,6 @@ Tips:
 - Present tense: 
     Commit Messeges are recommended to be Present tense
     (following campany's or project's code)
+- VIM
+    "git commit"
+    →I: insert message; wq: escape from VIM
