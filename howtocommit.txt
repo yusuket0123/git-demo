@@ -5,5 +5,9 @@
 2. git commit: commit
     git commit -m "message..."
 
-Atomic Commits
-keep each commit focused on a single thing
+Tips:
+- Atomic Commits: 
+    Keep each commit focused on a single thing
+- Present tense: 
+    Commit Messeges are recommended to be Present tense
+    (following campany's or project's code)
