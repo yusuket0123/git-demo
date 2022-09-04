@@ -18,7 +18,7 @@ Tips:
     (following campany's or project's code)
 - VIM
     "git commit"
-    →I: insert message; wq: escape from VIM
-    using for example when writing too long messages to commit
+    →Esc: command mode; "i": insert message; "wq:": escape from VIM
+    usecase: using for example when writing too long messages to commit
 - Check the log briefly
     git log --oneline: show each log of commits in one line
