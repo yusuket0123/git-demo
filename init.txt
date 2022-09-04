@@ -4,3 +4,4 @@
     - git status: check git status
 1. Initialize; make repository in the arbitrary directory
     - git init
+
