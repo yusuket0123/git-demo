@@ -1,0 +1,6 @@
+### Description of init procedure
+
+0. Check if there's repository or not
+    - git status: check git status
+1. Initialize; make repository in the arbitrary directory
+    - git init

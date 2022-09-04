@@ -1,3 +1,5 @@
+### Description of commit procedure
+
 0. make stuff
 1. git add: choose which files are committed
     - git add file1 file2 ...
