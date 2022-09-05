@@ -22,3 +22,5 @@ Tips:
     usecase: using for example when writing too long messages to commit
 - Check the log briefly
     git log --oneline: show each log of commits in one line
+- Amendment of commit
+    : git add (file) → git commit --amend
