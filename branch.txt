@@ -1,0 +1,16 @@
+### Description of Branch ###
+- Master (Main) branch: master copy
+- HEAD: current location that it is being checked out
+- check a branch:
+    git branch (* is current location)
+- make a new branch:
+    git brach <branch-name>
+    * make a neww branch based upon the current HEAD
+- switch between branches:
+    git switch <branch-name>
+    git checkout <branch-name>
+
+
+    aaaaaa
+cccccc
+    bbbbbbb
