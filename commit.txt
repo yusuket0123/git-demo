@@ -6,6 +6,7 @@
     - git add . : stage all changes at once
 2. git commit: commit
     git commit -m "message..."
+    git commit -a: commit all change at once without "git add" command
 3. check the log of commit
     - git log
 
