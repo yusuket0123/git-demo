@@ -1,0 +1,17 @@
+### Description of merge ###
+
+Command
+0. git switch <HEAD-branch-name>
+1. git merge <merging-branch-name>
+
+Feature
+- merge branches, not specific commits
+- merge to the current HEAD branch
+    (basically have to switch to master branch before merging)
+- merged branch still exists even after branched
+
+Tips
+- merge conflicts should be resolved manually
+    modified file where conflicts occured
+    →git add modified file
+    →git commit
