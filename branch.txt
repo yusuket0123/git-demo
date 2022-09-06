@@ -10,7 +10,6 @@
     git switch <branch-name>
     git checkout <branch-name>
 
-
-    aaaaaa
-cccccc
-    bbbbbbb
+Tips
+- create a new branch and switch to it at once
+    git switch -c <branch-name>
