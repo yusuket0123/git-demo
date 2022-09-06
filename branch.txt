@@ -1,16 +1,18 @@
 ### Description of Branch ###
-- Master (Main) branch: master copy
-- HEAD: current location that it is being checked out
-- check a branch:
-    git branch (* is current location)
-- make a new branch:
+0. Check a branch:
+    - git branch (* is current location)
+    * -d: delete branch
+    * -c: copy branch
+    * -f: reset branch to startpoint
+    * -m: rename branch name (after change to the branch)
+1. Make a new branch:
     git brach <branch-name>
     * make a neww branch based upon the current HEAD
-- switch between branches:
-    git switch <branch-name>
-    git checkout <branch-name>
+2. Switch between branches:
+    - git switch <branch-name>
+    - git checkout <branch-name>
+    *  -c: create a new branch and switch to it at once
 
 Tips
-- create a new branch and switch to it at once
-    git switch -c <branch-name>
-- delet branch: git branch -d
+- Master (Main) branch: master copy
+- HEAD: current location that it is being checked out 
