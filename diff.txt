@@ -22,3 +22,7 @@ Feature
 Tips
 - Diff-ing Specific files
     git diff HEAD/--staged <filename>
+- Comparing branches
+    git diff <branch1>..<branch2>
+- Comparing commits
+    git diff <commit1>..<commit2>
