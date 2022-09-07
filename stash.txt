@@ -13,3 +13,6 @@ Tips
 - Stashing Multiple Times
     0. git stash list: shows stash list 
     1. git stash apply stash@{#} *#: number on the stash list
+- Clear stash
+    - git stash drop stash@{#}: Clear the specific stash on the list
+    - git stash clear: Clear all the stash on the list
