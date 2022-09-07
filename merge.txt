@@ -12,6 +12,6 @@ Feature
 
 Tips
 - merge conflicts should be resolved manually
-    modified file where conflicts occured
+    Modified file where conflicts occured
     →git add modified file
     →git commit
