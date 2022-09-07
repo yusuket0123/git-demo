@@ -1,0 +1,6 @@
+### Description of stash ###
+
+What is Stashing
+- preserving uncommited changes
+    →makes us possible to switch to the other branches without unnecessary commits
+
