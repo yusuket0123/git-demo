@@ -4,3 +4,12 @@ What is Stashing
 - preserving uncommited changes
     →makes us possible to switch to the other branches without unnecessary commits
 
+Command
+0. git stash: put changes in the stash
+1-1. git stash pop: apply stashed changes with removing it from the stash
+1-2. git stash apply: apply stashed changes without removing it from the stash
+
+Tips
+- Stashing Multiple Times
+    0. git stash list: shows stash list 
+    1. git stash apply stash@{#} *#: number on the stash list
