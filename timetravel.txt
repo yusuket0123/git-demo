@@ -7,10 +7,9 @@ Command
     * commit hash can be checked by git log
 1. Time Travel Forward (return back to the most recent commit)
     git switch <branch-name>
-2. Discarding Changes
+2. Discarding Changes (when already modified files but don't wanna add or commit that changes)
     - git checkout HEAD <filename>
     - git checkout -- <filename>
-
 
 Relationship between HEAD, branch and commits
 - Usual case: HEAD references branch (e.g. master), branch references commits
@@ -27,5 +26,3 @@ commit1 --- commit2 --- commit3(most recent)
 
 Usecase
 - make a branch at wrong timepoint or forget to make a branch
-
-aaaakldssdsaofs
