@@ -1,2 +1,7 @@
 ### Description of Undoing Changes & Time Traveling ###
 
+Command
+- git checkout <commit-hash (first 7 digits)>
+    commit hash can be checked by git log
+
+akakakka
