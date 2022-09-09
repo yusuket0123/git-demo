@@ -1,7 +1,7 @@
 ### Description of Undoing Changes & Time Traveling ###
 
 Command
-0. Time Travel Backward (back to previous commit)
+0. Time Travel Backward (back to previous commit with out erasing any commits like git restor and git reset)
     - git checkout <commit-hash (first 7 digits)>
     - git checkout HEAD~#
     * commit hash can be checked by git log
@@ -10,6 +10,20 @@ Command
 2. Discarding Changes (when already modified files but don't wanna add or commit that changes)
     - git checkout HEAD <filename>
     - git checkout -- <filename>
+3. Restore
+    - git restore <file-name>: back to the last commit
+        * same as 2. (git checkout HEAD <filename>)
+    - git restore --source HEAD~# <filename>
+4. Reset
+    - regular reset: git reset <commit-hash (that we wanna back to, not get rid of)>
+        * get rid of only commits, not the changes in local files or directory
+        → take changes remainning in the local file to the new or another branch (so that master branch don't contain the commit that we wanna reset) 
+    - hard reset: git reset --hard <commit-hash>
+        * get rid of both commits and changes in directory
+5. Rivert
+    - git rivert <commit-hash (that we want to rivert or get rid of)>
+        * creates a new commit which undo the changes from a commit, resulting in a new commit with a commit message and hash
+
 
 Relationship between HEAD, branch and commits
 - Usual case: HEAD references branch (e.g. master), branch references commits
