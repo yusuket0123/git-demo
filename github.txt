@@ -1,0 +1,38 @@
+### Description of Github ###
+
+What's Github?
+- a website hosting Git repositories
+- home of open source projects
+
+Feature
+- Cloning: downloads the contenst of a repository based on some URL uploaded on the Github or GitBucket
+    git clone <url>
+
+Procedure and Command for Connecting to GitHub with SSH
+0. configure user email
+    git config user.email
+1. Check existing ssh file
+    ls -al ~/.ssh
+2. Create file
+    ssh-keygen -t ed25519 -C "tsuchiyayusuke0123@gmail.com"
+    * entar arbitrary public key   
+3. start the ssh-agent in the background
+    eval "$(ssh-agent -s)"
+4. Open ~/.ssh/config file and paste the content below
+
+    Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+    IdentityFile ~/.ssh/<filename>
+
+    * If ~/.ssh/config file doesn't exist, make it.
+
+5. Add SSH private key to the ssh-agent
+    ssh-add ~/.ssh/<filename>
+6. Copy the SSH public key to the clipboard
+    clip < ~/.ssh/<filename>.pub
+7. Add SSH key to the account
+    1. Github webpage > Settings > Access > SSH and GPG keys
+    2. Click "New SSH key" or "Add SSH key"
+    3. Paste key in the clipboard to "Key" field on the webpage
+    4. Click "Add SSH key"
