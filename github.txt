@@ -36,3 +36,5 @@ Procedure and Command for Connecting to GitHub with SSH
     2. Click "New SSH key" or "Add SSH key"
     3. Paste key in the clipboard to "Key" field on the webpage
     4. Click "Add SSH key"
+8. git remote add <name> <url>
+    * name: "origin" is usual
