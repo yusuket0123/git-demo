@@ -44,3 +44,5 @@ Procedure and Command for Connecting to GitHub with SSH
     * If modify: 
         git remote rename <old> <new>
         git remate remove <name>
+10. Pushing
+    git push <remote> <branch>
