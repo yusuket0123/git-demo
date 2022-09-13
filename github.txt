@@ -45,4 +45,6 @@ Procedure and Command for Connecting to GitHub with SSH
         git remote rename <old> <new>
         git remate remove <name>
 10. Pushing
-    git push <remote> <branch>
+    - git push -u <remote> <branch> → local b. name = remote b. name
+    - git push -u remote <local-branch>:<remote-branch> → local b. name ≠ remote b. name
+    - git push (If do "git push -u ~" at the 1st time)
