@@ -1,0 +1,9 @@
+### Description of Fetching & Pulling procedure ###
+
+Command
+- Check remote branch
+    $ git branch -r
+    > <remote>/<remote-branch>
+- Move to the most recent point of remote branch
+    $ git checkout <remote>/<remote-branch>
+    * back to the most recent point of local branch: $ git switch <local-branch>
