@@ -7,3 +7,11 @@ Command
 - Move to the most recent point of remote branch
     $ git checkout <remote>/<remote-branch>
     * back to the most recent point of local branch: $ git switch <local-branch>
+- Make a new local branch connected to remote branch that doesn't exist among local branches
+    $ git switch <remote-branch>
+    > Switched to a new branch 'fantasy'
+    > branch 'fantasy' set up to track 'origin/fantasy'.
+    →automatically make local branch which is same name as remote branch, and connect it with the remote Branch
+- Fetch: download changes from a remote repo, without integrating the changes into local directory
+    $ git fetch <remote> : fetch all changes from the remote repo  
+    $ git fetch <remote> <remote-branch>
