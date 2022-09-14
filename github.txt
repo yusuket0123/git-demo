@@ -6,45 +6,42 @@ What's Github?
 
 Feature
 - Cloning: downloads the contenst of a repository based on some URL uploaded on the Github or GitBucket
-    git clone <url>
+    $ git clone <url>
 
 Procedure and Command for Connecting to GitHub with SSH
 0. configure user email
-    git config user.email
+    $ git config user.email
 1. Check existing ssh file
-    ls -al ~/.ssh
+    $ ls -al ~/.ssh
 2. Create file
-    ssh-keygen -t ed25519 -C "tsuchiyayusuke0123@gmail.com"
-    * entar arbitrary public key   
+    $ ssh-keygen -t ed25519 -C "tsuchiyayusuke0123@gmail.com"
+    *entar arbitrary public key   
 3. start the ssh-agent in the background
-    eval "$(ssh-agent -s)"
+    $ eval "$(ssh-agent -s)"
 4. Open ~/.ssh/config file and paste the content below
-
-    Host *
-    AddKeysToAgent yes
-    UseKeychain yes
-    IdentityFile ~/.ssh/<filename>
-
+    >Host *
+    >AddKeysToAgent yes
+    >UseKeychain yes
+    >IdentityFile ~/.ssh/<filename>
     * If ~/.ssh/config file doesn't exist, make it.
-
 5. Add SSH private key to the ssh-agent
-    ssh-add ~/.ssh/<filename>
+    $ ssh-add ~/.ssh/<filename>
 6. Copy the SSH public key to the clipboard
-    clip < ~/.ssh/<filename>.pub
+    $ clip < ~/.ssh/<filename>.pub
 7. Add SSH key to the account
     1. Github webpage > Settings > Access > SSH and GPG keys
     2. Click "New SSH key" or "Add SSH key"
     3. Paste key in the clipboard to "Key" field on the webpage
     4. Click "Add SSH key"
 8. Adding a new remote repo
-    git remote add <name> <url>
+    $ git remote add <name> <url>
     * name: "origin" is usual
 9. Check the work
-    git remote -v
+    $ git remote -v
     * If modify: 
-        git remote rename <old> <new>
-        git remate remove <name>
+        $ git remote rename <old> <new>
+        $ git remate remove <name>
 10. Pushing
-    - git push -u <remote> <branch> → local b. name = remote b. name
-    - git push -u remote <local-branch>:<remote-branch> → local b. name ≠ remote b. name
-    - git push (If do "git push -u ~" at the 1st time)
+    - $ git push -u <remote> <branch> → local b. name = remote b. name
+    - $ git push -u remote <local-branch>:<remote-branch> → local b. name ≠ remote b. name
+    - $ git push (If do "git push -u ~" at the 1st time)

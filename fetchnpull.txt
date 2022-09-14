@@ -15,3 +15,9 @@ Command
 - Fetch: download changes from a remote repo, without integrating the changes into local directory
     $ git fetch <remote> : fetch all changes from the remote repo  
     $ git fetch <remote> <remote-branch>
+    →If merging the changes on local directory after fetching
+        $ git merge <remote>/<remote-branch>
+- Pull: download changes from a remote repo, with integrating the changes into local directory
+    $ git pull <remote> <branch>
+    * recommended "git pull" before "git push" for checking the conflict in advance
+
