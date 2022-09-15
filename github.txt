@@ -8,6 +8,14 @@ Feature
 - Cloning: downloads the contenst of a repository based on some URL uploaded on the Github or GitBucket
     $ git clone <url>
 
+Setting
+- publc / private: visually accesibile to the specific members or not
+- Collaborator: Setting > Manage access > Invite a Collaborator
+    * Even collaborator can't invite other people
+- README.md: important information about a repo
+    - If put README file in the root, github automatically put it on the homepage
+    - .md stands for to markdown file
+
 Procedure and Command for Connecting to GitHub with SSH
 0. configure user email
     $ git config user.email
