@@ -15,6 +15,9 @@ Setting
 - README.md: important information about a repo
     - If put README file in the root, github automatically put it on the homepage
     - .md stands for to markdown file
+- Gist: storing and sharing previous work both for private and for public
+- Github pages: a hosting service for static webpages
+    * not supporting server-side code (Python, Ruby, etc.), but only for HTML/CSS/JS
 
 Procedure and Command for Connecting to GitHub with SSH
 0. configure user email
