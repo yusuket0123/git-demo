@@ -1,4 +1,11 @@
 ### Description of workflow ###
 
 Type of Workflow
-1. Centralized workflow: everyone works in master branch
+1. Centralized Workflow: everyone works in master branch
+    Assumed Problems: cann't push cuz haven't pull the up-to-date version from github
+    → git stash (preserve what is supposed to update to github) and git pull
+2. Feature Branches (Much better than centralized approach)
+    - Master/Main is treated as the official project history
+    → Master/Main won't contain broken code
+    - all new development should be done on seperate branches
+    → When each work has done, it can be merged into Master/Main
