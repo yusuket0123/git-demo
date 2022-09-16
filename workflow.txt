@@ -1,0 +1,4 @@
+### Description of workflow ###
+
+Type of Workflow
+1. Centralized workflow: everyone works in master branch
