@@ -9,3 +9,9 @@ Type of Workflow
     → Master/Main won't contain broken code
     - all new development should be done on seperate branches
     → When each work has done, it can be merged into Master/Main
+
+How to merge 
+0. merge changes into master branch
+1. Send a message and discuss
+2. pull request
+    
