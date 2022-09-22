@@ -10,8 +10,24 @@ Type of Workflow
     - all new development should be done on seperate branches
     → When each work has done, it can be merged into Master/Main
 
-How to merge 
+How collaborator can send a request to admin 
 0. merge changes into master branch
 1. Send a message and discuss
-2. pull request
-    
+2. pull request on the github website
+3. approval of pull request
+
+How admin can resolve conflict
+> git fetch origin
+> git switch my-new-Feature
+> merge master
+> fix conflicts!
+> git switch master
+> git merge my-new-feature
+> git push origin master
+
+Forking
+: make a personal copy of some repo on github
+- On open project, we can do pull request through our own fork
+- the update of the original repo isn't reflected on fork automatically
+    → stay up to date with what's happening on a original repo
+    > git remote add upstream
