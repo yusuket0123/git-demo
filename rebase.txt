@@ -1,0 +1,24 @@
+### Description of Rebasing ###
+
+What's rebasing
+- combining branch
+- rewrite history without maerging
+    * don't have to make bunch of logs of merging: 
+        useful when frequent update by collaborators occurs during not working on my own main branch
+
+Command
+> git switch <feature-branchname>
+> git rebase master
+
+When should not rebasing
+- when history of commits shared with others will be lost
+
+Interactive rebase
+> git rebase -i HEAD~#
+    *#: a commit where I want to go bach
+- list of commits which can be used for rebase
+    - pick: use the commit
+    - reword: use the commit, but edit the commit message
+    - edit: use commit, but stop for amending
+    - fixup: use commit contents but meld it into previous commit and discard the commit message
+    - drop: remove commit (and content of the commit entirely)
