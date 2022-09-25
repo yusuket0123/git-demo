@@ -1,0 +1,27 @@
+### Description of Git Tags ###
+
+What's Tag
+- a pointer to a commit at my discretion
+
+Types of Tag
+- Lightweight Tags: just a name/label that points to a paticular commit
+- Annotated tags: store extra meta data
+
+Semantic Versioning
+- MajorRelease.MinorRelease.PatchRelease
+    e.g. 2.4.1
+    * patch: bug fix or change not affecting people to use the library
+- starting from 1.0.0
+
+Command
+> git tag # check log of tags
+> git tag -l "*beta*" # "*beta*": an example of pattern match
+> git chackout <tag> # back to a tag previousely made
+> git diff <tagname> <tagname> # compare tags
+> git tag <tagname> # make a lightweight tag
+> git tage -a <tagname> # make a annotated tag
+> git show <tagname> # check the meta data of tag
+> git tag <tagname> <commit> # tagging previous commits
+> git tag <tagname> <commit> -f # forcibly apply the tag to the commit when the tag alreadty exists
+> git tag -d <tagname> # delete a tag
+> git push <remote> --tags
