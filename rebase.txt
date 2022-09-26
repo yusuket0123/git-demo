@@ -22,3 +22,7 @@ Interactive rebase
     - edit: use commit, but stop for amending
     - fixup: use commit contents but meld it into previous commit and discard the commit message
     - drop: remove commit (and content of the commit entirely)
+
+How to Fix Mistakes of rebase
+> git regflog show <branchname> # check the point where I want to go back 
+> git reset --hard <7digits-hash> # back to the point
